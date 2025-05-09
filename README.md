@@ -14,6 +14,8 @@
 
 </div>
 
+For a more detailed template, see [py-project-template](https://github.com/MichaelCurrin/py-project-template/) repo.
+
 
 ## Sample usage
 
@@ -29,7 +31,7 @@ Hello World
 
 Put your documentation here.
 
-## License
 
+## License
 
 Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
