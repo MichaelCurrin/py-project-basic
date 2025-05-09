@@ -1,3 +1,7 @@
+"""
+Python project main module.
+"""
+
 import argparse
 
 
@@ -16,8 +20,8 @@ def main():
     )
     args = parser.parse_args()
 
-    foo = args.foo
-    print(f"Hello {foo}")
+    print(f"Hello {args.foo}")
+
 
 if __name__ == "__main__":
     main()
