@@ -6,16 +6,16 @@ name = "py-project-basic"
 version = "0.1.0"
 description = "Minimal template for a Python Poetry app"
 authors = [
-    { name = "Michael Currin", email = "18750745+MichaelCurrin@users.noreply.github.com" },
+  { name = "Michael Currin", email = "18750745+MichaelCurrin@users.noreply.github.com" },
 ]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
 
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
 isort = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
