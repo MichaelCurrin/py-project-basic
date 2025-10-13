@@ -14,7 +14,7 @@
 
 </div>
 
-For a more detailed template, see [py-project-template](https://github.com/MichaelCurrin/py-project-template/) repo.
+For a more detailed template, see [py-project-template](https://github.com/MichaelCurrin/py-project-template/) repo, with CI and install flow without Poetry.
 
 
 ## Sample usage
