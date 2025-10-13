@@ -1,14 +1,10 @@
-"""
-Python project main module.
-"""
+"""Python project main module."""
 
 import argparse
 
 
 def main():
-    """
-    Main command-line entry-point.
-    """
+    """Main command-line entry-point."""
     parser = argparse.ArgumentParser(description="App description.")
 
     parser.add_argument(

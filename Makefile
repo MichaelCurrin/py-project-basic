@@ -2,24 +2,41 @@ SHELL = /bin/bash
 
 default: install
 
-all: install fmt-check
+all: install check test
 
 
 install:
-	poetry install
+	poetry install --no-root
 
 update:
 	poetry update
 
+g install-global:
+	pipx install . --force
 
-fmt:
-	poetry run black .
-	poetry run isort .
+
+lint:
+	poetry run ruff check
 
 fmt-check:
-	poetry run black . --diff --check
-	poetry run isort . --diff --check-only
+	poetry run ruff format --check
 
+fix:
+	poetry run ruff check --fix
+	poetry run ruff format
+
+
+check:
+	poetry build
+	$(MAKE) lint
+	$(MAKE) fmt-check
+	$(MAKE) types
+
+test:
+	PYTHONPATH=. poetry run pytest
+
+run-help:
+	poetry run python -m app --help
 
 run:
 	poetry run python -m app --foo World
