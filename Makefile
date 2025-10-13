@@ -33,7 +33,7 @@ check:
 	$(MAKE) types
 
 test:
-	PYTHONPATH=. poetry run pytest
+	poetry run pytest
 
 run-help:
 	poetry run python -m app --help
