@@ -1,4 +1,5 @@
 SHELL = /bin/bash
+APP_DIR = app
 
 default: install
 
@@ -25,6 +26,8 @@ fix:
 	poetry run ruff check --fix
 	poetry run ruff format
 
+types:
+	poetry run mypy $(APP_DIR) tests
 
 check:
 	poetry build
@@ -37,7 +40,7 @@ test:
 
 
 run-help:
-	poetry run python -m app --help
+	poetry run python -m $(APP_DIR) --help
 
 run:
-	poetry run python -m app --foo World
+	poetry run python -m $(APP_DIR) --foo World
