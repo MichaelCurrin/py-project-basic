@@ -6,6 +6,10 @@ default: install
 all: install check test
 
 
+h help:
+	@grep '^[a-z]' Makefile
+
+
 install:
 	poetry install --no-root
 
