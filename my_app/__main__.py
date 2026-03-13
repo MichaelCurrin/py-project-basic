@@ -4,7 +4,7 @@ import argparse
 
 
 def main() -> None:
-    """Main command-line entry-point."""
+    """Start the app."""
     parser = argparse.ArgumentParser(description="App description.")
 
     parser.add_argument(

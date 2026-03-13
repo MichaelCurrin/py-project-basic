@@ -16,10 +16,10 @@ pytest = "^9.0.2"
 mypy = "^1.18.2"
 
 [tool.poetry]
-packages = [{ include = "app" }]
+packages = [{ include = "my_app" }]
 
 [project.scripts]
-app = "app.__main__:main"
+my_app = "my_app.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

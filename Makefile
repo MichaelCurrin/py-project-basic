@@ -1,5 +1,5 @@
 SHELL = /bin/bash
-APP_DIR = app
+APP_DIR = my_app
 
 default: install
 
