@@ -5,7 +5,10 @@ import argparse
 
 def main() -> None:
     """Start the app."""
-    parser = argparse.ArgumentParser(description="App description.")
+    parser = argparse.ArgumentParser(
+        prog="my_app",
+        description="App description.",
+    )
 
     parser.add_argument(
         "--foo",
